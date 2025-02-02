@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Валентина, Соня!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .card {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 2;
+            width: 90%; /* Адаптивная ширина */
+            max-width: 400px; /* Максимальная ширина для больших экранов */
+            position: relative;
+        }
+        h1 {
+            font-size: 24px; /* Уменьшенный размер для мобильных */
+            margin-bottom: 20px;
+            color: #ff7eb3;
+        }
+        p {
+            font-size: 16px; /* Уменьшенный размер для мобильных */
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 30px; /* Уменьшенный размер для мобильных */
+            color: #ff52a0;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px; /* Отступ от нижней части экрана */
+            font-size: 12px; /* Уменьшенный размер для мобильных */
+            opacity: 0.7;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+        }
+        /* Котики */
+        .cat {
+            position: absolute;
+            width: 100px; /* Уменьшенный размер для мобильных */
+            animation: float 6s ease-in-out infinite;
+        }
+        /* Позиционирование котиков так, чтобы они были вне карточки */
+        .cat:nth-child(1) {
+            top: 5%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+        .cat:nth-child(2) {
+            top: 5%;
+            right: 5%;
+            animation-delay: 2s;
+        }
+        .cat:nth-child(3) {
+            top: 25%;
+            left: 5%;
+            animation-delay: 4s;
+        }
+        .cat:nth-child(4) {
+            top: 25%;
+            right: 5%;
+            animation-delay: 6s;
+        }
+        .cat:nth-child(5) {
+            bottom: 25%;
+            left: 5%;
+            animation-delay: 1s;
+        }
+        .cat:nth-child(6) {
+            bottom: 25%;
+            right: 5%;
+            animation-delay: 3s;
+        }
+        .cat:nth-child(7) {
+            bottom: 5%;
+            left: 5%;
+            animation-delay: 5s;
+        }
+        .cat:nth-child(8) {
+            bottom: 5%;
+            right: 5%;
+            animation-delay: 7s;
+        }
+        .cat:nth-child(9) {
+            top: 15%;
+            left: 30%;
+            animation-delay: 2s;
+        }
+        .cat:nth-child(10) {
+            top: 15%;
+            right: 30%;
+            animation-delay: 4s;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px); /* Более компактная анимация */
+            }
+        }
+
+        /* Медиа-запросы для адаптации под мобильные устройства */
+        @media (max-width: 600px) {
+            .card {
+                width: 95%; /* Ещё больше пространства для карточки */
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .heart {
+                font-size: 25px;
+            }
+            .cat {
+                width: 80px; /* Дополнительное уменьшение размера для очень маленьких экранов */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>Милая Сонечка,</h1>
+    <p>
+    Ты — самое яркое солнышко в моей жизни,<br>
+        твой смех заставляет сердце биться чаще,<br>
+        а улыбка делает этот мир светлее.<br><br>
+        
+        Пусть каждый день будет наполнен спокойствием,<br>
+        теплом и любовью!<br>
+        Желаю тебе миллионов радостных моментов,<br>
+        искренней радости и безграничного счастья!
+    </p>
+    <div class="heart">❤️</div>
+</div>
+<footer>
+    Создано с <span style="color: #ff52a0;">❤️</span> твоим ромочкой. Я всегда буду рядом в трудные моменты, обещаю!!!
+</footer>
+<!-- Котики -->
+<img src="https://i.imgur.com/h4p2i9e.png" alt="Люблю тебя" class="cat">
+<img src="https://i.imgur.com/88Yrkko.png" alt="Ты самая хорошая" class="cat">
+<img src="https://i.imgur.com/zgQ6eeB.png" alt="Ты моя умничка" class="cat">
+<img src="https://i.imgur.com/yJ6fFAQ.png" alt="В твоей улыбке я вижу весь мир" class="cat">
+<img src="https://i.imgur.com/VVWxRgj.png" alt="У тебя самые красивые глаза" class="cat">
+<img src="https://i.imgur.com/kNWJNef.png" alt="Я люблю твой запах" class="cat">
+<img src="https://i.imgur.com/TUZ4Lql.png" alt="Хочу всегда быть рядом" class="cat">
+<img src="https://i.imgur.com/kPa7Lbk.png" alt="Ты мой самый дорогой человек" class="cat">
+<img src="https://i.imgur.com/wEsHbOS.png" alt="Ты самая красивая" class="cat">
+<img src="https://i.imgur.com/X4GjuYD.png" alt="Ты самая милая" class="cat">
+</body>
+</html>
